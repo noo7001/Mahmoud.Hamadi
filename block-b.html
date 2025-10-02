@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 777 - Block B</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="block.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <button class="back-btn" onclick="window.location.href='hamade-group.html'">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+            </button>
+            
+            <h1 class="header-title">MAHMOUD HAMADE</h1>
+        </div>
+
+        <!-- Block Title -->
+        <div class="block-header">
+            <h2 class="block-title">Project 777</h2>
+            <h3 class="block-subtitle">Block B</h3>
+        </div>
+
+        <!-- PDF Viewer Section -->
+        <div class="pdf-container">
+            <iframe 
+                id="pdf-viewer" 
+                src="./plans/block-b.pdf" 
+                type="application/pdf"
+                class="pdf-iframe">
+            </iframe>
+            <div class="pdf-fallback" id="pdf-fallback">
+                <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10 9 9 9 8 9"/>
+                </svg>
+                <p class="fallback-text">PDF preview not available in browser</p>
+                <p class="fallback-subtext">Please use the download button below to view the plans</p>
+            </div>
+        </div>
+
+        <!-- Download Button -->
+        <div class="actions">
+            <a href="./plans/block-b.pdf" download="Project-777-Block-B-Plans.pdf" class="download-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                <span>Download Block B Plans</span>
+            </a>
+        </div>
+
+        <!-- Info Section -->
+        <div class="info-section">
+            <p class="info-text">Download the PDF to view detailed plans, layouts, and specifications for Block B of Project 777.</p>
+        </div>
+    </div>
+
+    <script src="block.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamade Group - Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hamade-group.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <button class="back-btn" onclick="window.location.href='index.html'">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+            </button>
+            
+            <h1 class="header-title">MAHMOUD HAMADE</h1>
+        </div>
+
+        <!-- Hamade Group Card -->
+        <div class="hamade-card">
+            <img src="./assets/Hamade Group Button-01.png" alt="Hamade Group" class="hamade-logo">
+        </div>
+
+        <!-- Projects Section -->
+        <div class="projects-section">
+            <!-- Project 777 - Expandable -->
+            <div class="project-item">
+                <button class="project-btn" id="project-777-btn" onclick="toggleProject('project-777')">
+                    <span class="project-title">Project 777</span>
+                    <svg class="chevron-icon" id="project-777-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M6 9l6 6 6-6"/>
+                    </svg>
+                </button>
+                
+                <!-- Expandable Blocks -->
+                <div class="blocks-container" id="project-777-blocks">
+                    <button class="block-btn" onclick="goToBlock('block-a')">
+                        <span class="block-title">Block A</span>
+                    </button>
+                    <div class="block-divider"></div>
+                    <button class="block-btn" onclick="goToBlock('block-b')">
+                        <span class="block-title">Block B</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="hamade-group.js"></script>
+</body>
+</html>
+
