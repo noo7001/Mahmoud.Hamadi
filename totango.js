@@ -1,33 +1,13 @@
-// PDF files configuration
-// Add your PDF files here with their paths and display names
-const pdfFiles = {
-    'block-a': [
-        { name: 'NABAT 777-A Plan 1', path: './plans/block-a/NABAT.777-A - 1.pdf', description: 'Block A - Plan 1' },
-        { name: 'NABAT 777-A Plan 2', path: './plans/block-a/NABAT.777-A-2.pdf', description: 'Block A - Plan 2' },
-        { name: 'NABAT 777-A Plan 3', path: './plans/block-a/NABAT.777-A-3.pdf', description: 'Block A - Plan 3' },
-        { name: 'NABAT 777-A Plan 8', path: './plans/block-a/NABAT.777-A-8.pdf', description: 'Block A - Plan 8' },
-        { name: 'NABAT 777-A Plan 9', path: './plans/block-a/NABAT.777-A-9.pdf', description: 'Block A - Plan 9' },
-        { name: 'Block A Ground Floor', path: './plans/block-a/NABAT.77A-EDITING-BLOCKA-GROUND FLOOR.pdf', description: 'Ground Floor Layout' }
-    ],
-    'block-b': [
-        // Example: { name: 'Floor Plan', path: './plans/block-b/floor-plan.pdf', description: 'Detailed floor plan' }
-        // Add your Block B PDFs here
-    ]
-};
-
-// Determine which block this page is for
-function getCurrentBlock() {
-    const subtitle = document.querySelector('.block-subtitle').textContent.trim();
-    return subtitle === 'Block A' ? 'block-a' : 'block-b';
-}
+// PDF files configuration for Totango Chakif
+const totangoChakifFiles = [
+    { name: 'Totango Chakif Plan', path: './plans/totango-chakif/TO TANGO-ALCHAKIF-PLAN-1.pdf', description: 'Complete project plan and layout' }
+];
 
 // Load and display PDF files
 function loadPDFList() {
     const pdfList = document.getElementById('pdf-list');
-    const currentBlock = getCurrentBlock();
-    const files = pdfFiles[currentBlock];
 
-    if (!files || files.length === 0) {
+    if (!totangoChakifFiles || totangoChakifFiles.length === 0) {
         // Show empty state
         pdfList.innerHTML = `
             <div class="empty-state">
@@ -45,7 +25,7 @@ function loadPDFList() {
     }
 
     // Generate PDF items
-    files.forEach((file, index) => {
+    totangoChakifFiles.forEach((file, index) => {
         const pdfItem = document.createElement('a');
         pdfItem.className = 'pdf-item';
         pdfItem.href = file.path;

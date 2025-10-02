@@ -17,6 +17,15 @@ function goToBlock(blockName) {
     }
 }
 
+// Navigate to specific project page
+function goToProject(projectName) {
+    if (projectName === 'project-777') {
+        window.location.href = 'project-777.html';
+    } else if (projectName === 'totango-chakif') {
+        window.location.href = 'totango-chakif.html';
+    }
+}
+
 // Add smooth entrance animation
 document.addEventListener('DOMContentLoaded', function() {
     const elements = document.querySelectorAll('.hamade-card, .project-item');
