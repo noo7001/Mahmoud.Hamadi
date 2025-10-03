@@ -3,19 +3,19 @@
 
 const projectsConfig = [
     {
-        id: 'project-777',
+        id: 'Project-777',
         name: 'Project 777',
-        folder: 'project-777', // folder name in the plans/ directory
+        folder: 'Project-777', // folder name in the plans/ directory
         subtitle: 'Complete Project Plans',
         files: [
-            { name: 'NABAT.777-A - 1', path: './plans/project-777/NABAT.777-A - 1.pdf', type: 'pdf' },
-            { name: 'NABAT.777-A-2', path: './plans/project-777/NABAT.777-A-2.pdf', type: 'pdf' },
-            { name: 'NABAT.777-A-3', path: './plans/project-777/NABAT.777-A-3.pdf', type: 'pdf' },
-            { name: 'NABAT.777-A-9', path: './plans/project-777/NABAT.777-A-9.pdf', type: 'pdf' },
-            { name: 'NABAT.77A-EDITING-BLOCKA-GROUND FLOOR', path: './plans/project-777/NABAT.77A-EDITING-BLOCKA-GROUND FLOOR.pdf', type: 'pdf' },
-            { name: '3d plan (1)', path: './plans/project-777/3d plan (1).jpg', type: 'image' },
-            { name: '3d plan (2)', path: './plans/project-777/3d plan (2).jpg', type: 'image' },
-            { name: '3d plan (3)', path: './plans/project-777/3d plan (3).jpg', type: 'image' }
+            { name: 'NABAT.777-A - 1', path: './plans/Project-777/NABAT.777-A - 1.pdf', type: 'pdf' },
+            { name: 'NABAT.777-A-2', path: './plans/Project-777/NABAT.777-A-2.pdf', type: 'pdf' },
+            { name: 'NABAT.777-A-3', path: './plans/Project-777/NABAT.777-A-3.pdf', type: 'pdf' },
+            { name: 'NABAT.777-A-9', path: './plans/Project-777/NABAT.777-A-9.pdf', type: 'pdf' },
+            { name: 'NABAT.77A-EDITING-BLOCKA-GROUND FLOOR', path: './plans/Project-777/NABAT.77A-EDITING-BLOCKA-GROUND FLOOR.pdf', type: 'pdf' },
+            { name: '3d plan (1)', path: './plans/Project-777/3d plan (1).jpg', type: 'image' },
+            { name: '3d plan (2)', path: './plans/Project-777/3d plan (2).jpg', type: 'image' },
+            { name: '3d plan (3)', path: './plans/Project-777/3d plan (3).jpg', type: 'image' }
         ]
     },
     {
@@ -63,6 +63,7 @@ const projectsConfig = [
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { projectsConfig };
 }
+
 
 
 
