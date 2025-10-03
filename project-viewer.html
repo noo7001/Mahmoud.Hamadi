@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Plans</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project-viewer.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <button class="back-btn" onclick="window.location.href='hamade-group.html'">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+            </button>
+            
+            <h1 class="header-title">MAHMOUD HAMADE</h1>
+        </div>
+
+        <!-- Project Title (dynamically loaded) -->
+        <div class="project-header">
+            <h2 class="project-title" id="project-title">Project</h2>
+            <p class="project-subtitle" id="project-subtitle">Project Plans & Documents</p>
+        </div>
+
+        <!-- Images Gallery -->
+        <div class="images-gallery" id="images-gallery">
+            <!-- Images will be added here dynamically -->
+        </div>
+
+        <!-- PDFs List -->
+        <div class="pdf-list" id="pdfs-list">
+            <!-- PDFs will be added here dynamically -->
+        </div>
+
+        <!-- Info Section -->
+        <div class="info-section">
+            <p class="info-text">Click on any file to view or download.</p>
+        </div>
+    </div>
+
+    <script src="projects-config.js"></script>
+    <script src="project-viewer.js"></script>
+</body>
+</html>
+
