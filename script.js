@@ -1,11 +1,11 @@
 // Contact links
 const links = {
-    wechat: 'https://u.wechat.com/kBLh_VtWlv18EFv_XmSYiNs?s=2',
+    wechat: 'https://u.wechat.com/kGIBJQ7ZOnflJdLzbC-gqqA?s=2',
     whatsapp: 'https://wa.me/306949470445',
     email: 'mailto:iam.hamade@gmail.com',
     instagram: 'https://www.instagram.com/h.amad.e/',
     facebook: 'https://www.facebook.com/mahmoud.hamade.965',
-    telegram: 'https://t.me/306949470445',
+    telegram: 'https://t.me/iamhamade',
     fb: 'fb.html',  // F&B restaurants page
     hamade: 'hamade-group.html'  // Hamade Group projects page
 };
