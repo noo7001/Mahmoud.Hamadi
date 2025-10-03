@@ -27,13 +27,20 @@ const projectsConfig = [
             { name: 'Totango Alchakif Plan 1', path: './plans/totango-chakif/TO TANGO-ALCHAKIF-PLAN-1.pdf', type: 'pdf' }
         ]
     },
-    {
-        id: 'block-b',
-        name: 'Block B',
-        folder: 'block-b', // folder name in the plans/ directory
-        subtitle: 'Block B Plans & Documents',
+   {
+        id: 'PHOENICIAN-BLUE-GRP',
+        name: 'PHOENICIAN BLUE GRP',
+        folder: 'PHOENICIAN-BLUE-GRP', // folder name in the plans/ directory
+        subtitle: 'PHOENICIAN-BLUE-GRP',
         files: [
-            // Add Block B files here when available
+            { name: 'PHOENICIAN BLUE GRP Plan 1', path: './plans/PHOENICIAN-BLUE-GRP/PHOENICIAN-BLUE-GRP-PLAN-1.pdf', type: 'pdf' },
+            { name: '3d plan (1)', path: './plans/PHOENICIAN-BLUE-GRP/3d plan (1).jpeg', type: 'image' },
+            { name: '3d plan (2)', path: './plans/PHOENICIAN-BLUE-GRP/3d plan (2).jpeg', type: 'image' },
+            { name: '3d plan (3)', path: './plans/PHOENICIAN-BLUE-GRP/3d plan (3).jpeg', type: 'image' },
+            { name: '3d plan (4)', path: './plans/PHOENICIAN-BLUE-GRP/3d plan (4).jpeg', type: 'image' },
+            { name: '3d plan (5)', path: './plans/PHOENICIAN-BLUE-GRP/3d plan (5).jpeg', type: 'image' },
+            { name: '3d plan (6)', path: './plans/PHOENICIAN-BLUE-GRP/3d plan (6).jpeg', type: 'image' },
+            { name: '3d plan (7)', path: './plans/PHOENICIAN-BLUE-GRP/3d plan (7).jpeg', type: 'image' }
             // Example: { name: 'Floor Plan', path: './plans/block-b/floor-plan.pdf', type: 'pdf' }
         ]
     }
@@ -56,4 +63,5 @@ const projectsConfig = [
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { projectsConfig };
 }
+
 
