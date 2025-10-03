@@ -5,7 +5,7 @@ const projectsConfig = [
     {
         id: 'project-777',
         name: 'Project 777',
-        folder: 'block-a', // folder name in the plans/ directory
+        folder: 'project-777', // folder name in the plans/ directory
         subtitle: 'Complete Project Plans',
         files: [
             { name: 'NABAT.777-A - 1', path: './plans/project-777/NABAT.777-A - 1.pdf', type: 'pdf' },
@@ -63,6 +63,7 @@ const projectsConfig = [
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { projectsConfig };
 }
+
 
 
 
