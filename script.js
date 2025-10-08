@@ -12,8 +12,26 @@ const links = {
 
 // Set up event listeners when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // WeChat QR Code Modal
+    const wechatBtn = document.getElementById('wechat-btn');
+    const wechatModal = document.getElementById('wechat-modal');
+    const closeBtn = document.querySelector('.close-btn');
+    
+    wechatBtn.onclick = function() {
+        wechatModal.style.display = 'flex';
+    };
+    
+    closeBtn.onclick = function() {
+        wechatModal.style.display = 'none';
+    };
+    
+    window.onclick = function(event) {
+        if (event.target === wechatModal) {
+            wechatModal.style.display = 'none';
+        }
+    };
+    
     // Contact buttons
-    document.getElementById('wechat-link').href = links.wechat;
     document.getElementById('whatsapp-link').href = links.whatsapp;
     
     // Social media links
@@ -57,7 +75,6 @@ function updateLinks(newLinks) {
     Object.assign(links, newLinks);
     
     // Update href attributes
-    if (newLinks.wechat) document.getElementById('wechat-link').href = newLinks.wechat;
     if (newLinks.whatsapp) document.getElementById('whatsapp-link').href = newLinks.whatsapp;
     if (newLinks.email) document.getElementById('email-link').href = newLinks.email;
     if (newLinks.instagram) document.getElementById('instagram-link').href = newLinks.instagram;
